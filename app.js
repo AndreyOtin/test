@@ -69,6 +69,7 @@ const reviewClickHandler = function (isIncrease, e) {
   img.setAttribute('src', reviews[count].img)
 }
 
+window.addEventListener('DOMContentLoaded', reviewClickHandler.bind(this, true))
 btn.addEventListener('click', reviewClickHandler.bind(this, true))
 next.addEventListener('click', reviewClickHandler.bind(this, true))
 prev.addEventListener('click', reviewClickHandler.bind(this, false))
